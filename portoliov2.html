@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trial 2</title>
+    <script src="https://kit.fontawesome.com/ba8dd5adf5.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home"><h4>ANDEV</h4></a>
+        <ul id="sidemenu">
+           <li><a href="#about">About</a></li>
+           <li><a href="#blog">Blogs</a></li>
+           
+           <li><a href="#contact">Contact</a></li>
+           <i class="nav-icon fas fa-times"  onclick="closeSidemenu()"></i>
+        </ul>
+
+        <i class="nav-icon fa-solid fa-bars" onclick="openSidemenu()"></i>
+    </div>
+    <div class="body-wrapper">
+        <!-- *******************************************home********************** -->
+        <div class="home" id="hone">
+            <div class="home-text"><h1>Hey there! <br>I'm  <span class="name">Animesh</span>,  a web developer<br></h1>
+          <h3>let's get started. Keep scrollin to know me more 🐥</h3> </div>            
+        </div>
+    <!-- -----------------------------------Blog------------------------- -->
+    <div class="blogcarousel" id="blog"> 
+      <div class="blogheader">
+        <h4>What's New </h4> 
+      </div>
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+             <h2>Lorem, ipsum dolor sit amet consectetur <br>adipisicing elit. Distinctio, fuga.</h2>
+          </div>
+          <div class="carousel-item">
+            <h2>Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit. Distinctio, fuga.</h2>
+          </div>
+          <div class="carousel-item">
+            <h2>Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit. Distinctio, fuga.</h2>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>    </div>
+      <!-- *****************************************about**************************************** -->
+      <div class="about-me" id="about">
+        <div class="row">
+            <div class="col1">  </div>
+            <div class="col2"><h1>About Me</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum perspiciatis quis eaque labore quas voluptatem?</p>
+             <div class="sub-tabs">
+                <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                <p class="tab-links " onclick="opentab('Projects')">Projects</p>
+                <p class="tab-links " onclick="opentab('Experience')">Experience</p>
+             </div>
+             <div class="sub-tab-contents">
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>ui/ux</span> <br/> designing user interface for application</li>
+                        <li><span>web Development</span> <br/> web app Development</li>
+                        <li><span>Mobile App Development</span> <br/> application development for android/IOs</li>
+                    </ul>
+                  </div>
+                  <div class="tab-contents " id="Projects">
+                    <ul>
+                        <li><span>CRM</span>  <br/>using react js and material ui library</li>
+                        <li><span>MERN Blog Application</span> <br/> mern blogging Website</li>
+                        <li><span>Portfolio Website</span> <br/>Portfolio website using html css and js</li>
+                    </ul>
+                  </div>            
+                <div class="tab-contents " id="Experience">
+                    <ul>
+                        <li><span>Dec 2023-Apr 2024</span><br><span>StartAlignTech</span> <br/> React front-end Developer</li>
+                    </ul>
+                </div>
+             </div>
+             </div>
+            </div>
+            </div>
+         <!-- **********************************************contact-Me******************************* -->
+         <div class="contact-Me" id="contact">
+          <div class="container">
+              <div class="row">
+                  <div class="contact-left">
+                      <h1>Contact Me</h1>
+                      <p><i class="fa-solid fa-paper-plane"></i>Animeshajay.dev@gmail.com</p>
+                      <p><i class="fa-solid fa-phone"></i>+91 8595590644</p>
+       <div class="social-icons">
+          <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-github"></i></a>
+          <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+       </div>
+       <a href="Animesh's Resume (4).pdf" download class="btn2">Download CV</a>
+                  </div>
+                   <div class="contact-right">
+                      <form >
+                          <input type="text" placeholder="enter name">
+                          <input type="email" placeholder="enter email">
+                          <textarea name="Your Message" placeholder="Your Message" id="" cols="30" rows="10"></textarea>
+                          <button type="submit" class="btn2">Submit </button>
+                      </form>
+                   </div>
+              </div> </div> </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+      const AllTabs  = document.getElementsByClassName('activeLink');
+  const AllTabContent = document.getElementsByClassName('active-tab');
+
+  function opentab(tab) {
+      for( tab of AllTabs){tab.classList.remove('active-link')}
+  for(tabContent of AllTabContent){tabContent.classList.remove('active-tab')}
+  event.currentTarget.classList.add('active-link')
+  document.getElementById(tab).classList.add('active-tab')
+  }
+</script>
+<script>
+  var sidemenuStatus = document.getElementById("sidemenu")
+
+    function openSidemenu() {
+      sidemenuStatus.style.display="block";
+    }
+    function closeSidemenu() {
+      sidemenuStatus.style.display="none";
+    }
+
+</script>
+</body>
+</html>
