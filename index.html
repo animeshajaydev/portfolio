@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Animesh Ajay</title>
+    <!-- 1 -->
     <script src="https://kit.fontawesome.com/ba8dd5adf5.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
 
 </head>
 <body>
-    <div class="navbar">
+
+    <div class="body-wrapper">
+      <!-- 1 -->
+      <div class="navbar">
         <a href="#home" class="logo"><h4>PORTFOLIO</h4></a> <!-- 2 -->
         <ul id="sidemenu">
            <li><a href="#about">About</a></li>
@@ -22,7 +26,6 @@
 
         <i class="nav-icon fa-solid fa-bars" onclick="openSidemenu()"></i>
     </div>
-    <div class="body-wrapper">
         <!-- *******************************************home********************** -->
         <div class="home" id="hone">
             <div class="home-text"><h1>Hey there! <br>I'm  <span class="name">Animesh</span>,  a web developer<br></h1>
@@ -36,13 +39,14 @@
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" >
         <div class="carousel-inner">
           <div class="carousel-item active">
+            <!-- 4 -->
              <h2>Hi there! 👋 I'm a  React developer  <br></h2>
           </div>
           <div class="carousel-item">
-                     <h2>Currently immersed in crafting a MERN blog clone.<br> I'm putting the finishing touches on a MERN blog clone while wrapping up my BTech in Computer Science from MDU Rohtak.</h2>
+            <h2>Currently immersed in crafting a MERN blog clone.<br> I'm putting the finishing touches on a MERN blog clone while wrapping up my BTech in Computer Science.</h2>
           </div>
           <div class="carousel-item">
-                       <h2>From frontend design to backend functionality,  <br> I'm dedicated to creating intuitive and responsive web applications..</h2>
+            <h2>From frontend design to backend functionality,  <br> I'm dedicated to creating intuitive and responsive web applications..</h2>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -55,11 +59,13 @@
         </button>
       </div>    </div>
       <!-- *****************************************about**************************************** -->
+      <!-- 6 -->
       <div class="about-me" id="about">
         <div class="row">
             <div class="col1">  </div>
             <div class="col2"><h1>About Me</h1>
-            <h2>From frontend design to backend functionality,  <br> I'm dedicated to creating intuitive and responsive web applications..</h2>
+            <p>Curiosity and creativity are my key weapons<br>and so I value experience much more </p>
+            <p>Hope we get to work together . <b> Dhnywaad !</b> </p>
              <div class="sub-tabs">
                 <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
                 <p class="tab-links " onclick="opentab('Projects')">Projects</p>
@@ -101,20 +107,25 @@
           <a href=""><i class="fa-brands fa-whatsapp"></i></a>
           <a href=""><i class="fa-brands fa-facebook"></i></a>
           <a href=""><i class="fa-brands fa-github"></i></a>
-         <a href=""><i class="fa-brands fa-reddit"></i></a>
-
        </div>
-       <a href="Animesh's Resume.pdf" download class="btn2">Download CV</a>
                   </div>
                    <div class="contact-right">
-                      <form >
+                     <!--  <form >
                           <input type="text" placeholder="enter name">
                           <input type="email" placeholder="enter email">
                           <textarea name="Your Message" placeholder="Your Message" id="" cols="30" rows="10"></textarea>
                           <button type="submit" class="btn2">Submit </button>
-                      </form>
-                   </div>
+                      </form>-->
+                             <a href="Animesh's Resume.pdf" download class="btn2">Download CV</a>
+
+                   </div> 
               </div> </div> </div>
+            <!-- foooter section -->
+            <footer class="footer">
+              <p style="margin: 0;">&copy; 2024 Animesh.| Developed by <a href="https://twitter.com/animeshajay" target="_blank">@animeshajay</a></p>
+          </footer>
+          
+            </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script>
       const AllTabs  = document.getElementsByClassName('activeLink');
